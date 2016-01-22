@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "allOf": [
+    {
+      "$ref": "http://json-quiz.github.io/json-quiz/schemas/question/base/schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "application/x.graphic+json"
+          ]
+        },
+        "width": {
+          "type": "number"
+        },
+        "height": {
+          "type": "number"
+        },
+        "document": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "label": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "ext": {
+              "type": "string"
+            }
+          },
+          "required": ["id", "url"],
+        },
+        "coords": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": ["id"]
+          }
+        },
+        "solutions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              },
+              "shape": {
+                "type": "string"
+              },
+              "color": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "score": {
+                "type": "number"
+              },
+              "feedback": {
+                "type": "string"
+              }
+            },
+            "required": ["id", "value", "shape", "color", "size", "score"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["document", "coords", "width", "height"]
+    }
+  ]
+}
