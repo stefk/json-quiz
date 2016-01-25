@@ -24,17 +24,17 @@
             "id": {
               "type": "string"
             },
-            "label": {
+            "url": {
               "type": "string"
             },
-            "url": {
+            "label": {
               "type": "string"
             },
             "ext": {
               "type": "string"
             }
           },
-          "required": ["id", "url"],
+          "required": ["id", "url"]
         },
         "coords": {
           "type": "array",
@@ -79,7 +79,7 @@
                 "type": "string"
               }
             },
-            "required": ["id", "value", "shape", "color", "size", "score"],
+            "required": ["id", "value", "shape", "size", "score"],
             "additionalProperties": false
           }
         }

@@ -16,12 +16,13 @@
     }
   ],
   "solutions":[
-    {      
+    {
+      "id":"7",
       "value":"577,117",
       "shape":"circle",
       "color":"red",
       "size": 26,
-      "score": 2,
+      "score": "not a number",
       "feedback": "you should have known..."
     }
   ]

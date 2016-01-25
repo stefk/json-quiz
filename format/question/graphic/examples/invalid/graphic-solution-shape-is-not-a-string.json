@@ -16,9 +16,10 @@
     }
   ],
   "solutions":[
-    {      
+    {
+      "id":"7",
       "value":"577,117",
-      "shape":"circle",
+      "shape":["not a string"],
       "color":"red",
       "size": 26,
       "score": 2,

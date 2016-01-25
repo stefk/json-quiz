@@ -1,9 +1,10 @@
 {
   "id": "1",
   "type": "application/x.graphic+json",
-  "title": "Question ?",
-  "description":"Question description...",
+  "title": "Where is Charlie ?",
+  "description":"Find Charlie in the image below...",
   "width":800,
+  "height":400,
   "document": {
     "id": "12",
     "label": "Charlie",
@@ -11,10 +12,8 @@
   },
   "coords": [
     {
-      "id":"1"
-    },
-    {
       "id":"7"
     }
-  ]
+  ],
+  "solutions":[]
 }

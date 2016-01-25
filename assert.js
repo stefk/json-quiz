@@ -14,6 +14,7 @@ var resolved = {
   'match-question': 'question/match',
   'sort-question': 'question/sort',
   'cloze-question': 'question/cloze',
+  'graphic-question': 'question/graphic',
   'quiz': 'quiz'
 };
 

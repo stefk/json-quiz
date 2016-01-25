@@ -16,7 +16,8 @@
     }
   ],
   "solutions":[
-    {      
+    {
+      "id":12,
       "value":"577,117",
       "shape":"circle",
       "color":"red",

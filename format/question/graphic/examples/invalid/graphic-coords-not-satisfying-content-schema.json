@@ -4,6 +4,7 @@
   "title": "Question ?",
   "description":"Question description...",
   "width":800,
+  "height":400,
   "document": {
     "id": "12",
     "label": "Charlie",
@@ -11,10 +12,10 @@
   },
   "coords": [
     {
-      "id":"1"
+      "id":["not a string id"]
     },
     {
-      "id":"7"
+      
     }
   ]
 }

@@ -4,6 +4,7 @@
   "title": "Question ?",
   "description":"Question description...",
   "width":800,
+  "height":400,
   "document": {
     "id": "12",
     "label": "Charlie",
@@ -14,7 +15,7 @@
       "id":"1"
     },
     {
-      "id":"7"
+      "id":"1"
     }
   ]
 }

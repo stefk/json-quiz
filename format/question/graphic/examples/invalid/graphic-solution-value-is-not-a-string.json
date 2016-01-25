@@ -16,8 +16,9 @@
     }
   ],
   "solutions":[
-    {      
-      "value":"577,117",
+    {
+      "id":"7",
+      "value":["not a string"],
       "shape":"circle",
       "color":"red",
       "size": 26,
