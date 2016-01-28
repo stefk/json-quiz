@@ -12,13 +12,7 @@
             "application/x.graphic+json"
           ]
         },
-        "width": {
-          "type": "number"
-        },
-        "height": {
-          "type": "number"
-        },
-        "document": {
+        "image": {
           "type": "object",
           "properties": {
             "id": {
@@ -26,6 +20,12 @@
             },
             "url": {
               "type": "string"
+            },
+            "width": {
+              "type": "number"
+            },
+            "height": {
+              "type": "number"
             },
             "label": {
               "type": "string"
@@ -36,18 +36,26 @@
           },
           "required": ["id", "url"]
         },
-        "coords": {
+        // allOf content (une map a une collection d'area) -> definir le content area
+        "areas": {
           "type": "array",
           "minItems": 1,
           "uniqueItems": true,
-          "items": {
+          // ici shape est un "choix parmis" => oneOf default, rect, circle, poly -> definir les content circle, rect, default, poly
+          "shape": {
             "type": "object",
             "properties": {
               "id": {
                 "type": "string"
+              },
+              "type" : {
+                "type":"string"
+              },
+              "coords": {
+                // devraient être définies dans chaque shape
               }
             },
-            "required": ["id"]
+            "required": ["id", "type"]
           }
         },
         "solutions": {

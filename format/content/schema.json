@@ -38,6 +38,51 @@
         }
       },
       "required": ["url"]
+    },
+    "coord":{
+      "type": "object",
+      "properties" : {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        }
+      },
+      "required" : ["x", "y"]
+    },
+    "shape": {
+      "type": "object",
+      "properties": {
+        "coords":{
+          "type": "object",
+          "minItems": 1,
+          "items": {
+              "$ref": "http://json-quiz.github.io/json-quiz/schemas/content/schema.json#/definitions/coord"
+          }
+        }
+      }
+    },
+    "imageMap": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "http://json-quiz.github.io/json-quiz/schemas/content/schema.json#/definitions/distant"
+        },
+        {
+          "properties": {
+            "shape":{
+              "type": "object",
+               "oneOf": [
+                 { "$ref": "http://json-quiz.github.io/json-quiz/schemas/content/schema.json#/definitions/circle" },
+                 { "$ref": "http://json-quiz.github.io/json-quiz/schemas/content/schema.json#/definitions/rect" },
+                 { "$ref": "http://json-quiz.github.io/json-quiz/schemas/content/schema.json#/definitions/poly" }
+               ]
+            }
+          },
+          "required": ["shape"]
+        }
+      ]
     }
   },
   "allOf": [
