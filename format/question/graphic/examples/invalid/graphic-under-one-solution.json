@@ -1,0 +1,18 @@
+{
+  "id": "1",
+  "type": "application/x.graphic+json",
+  "title": "Where is Charlie ?",
+  "description":"Find Charlie in the image below...",
+  "document": {
+    "id": "12",
+    "url": "images/charlie_01.jpg",
+    "width":800,
+    "height":400
+  },
+  "coords": [
+    {
+      "id":"7"
+    }
+  ],
+  "solutions":[]
+}
