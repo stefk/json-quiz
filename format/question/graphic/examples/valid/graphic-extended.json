@@ -30,21 +30,17 @@
       "url": "http://domain.com/syllabus.txt"
     }
   ],
-  "width":800,
-  "height":400,
-  "document": {
+  "image": {
     "id": "12",
-    "label": "Charlie",
-    "url": "images/charlie_01.jpg"
-  },
-  "coords": [
-    {
-      "id":"1"
+    "type": "image/jpeg",
+    "meta": {
+      "label": "Charlie"
     },
-    {
-      "id":"7"
-    }
-  ],
+    "url": "images/charlie_01.jpg",
+    "width":800,
+    "height":400
+  },
+  "pointers": 2,
   "hints": [
     {
       "id": "21",
